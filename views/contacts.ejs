@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contacts</title>
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+	<meta charset="utf-8">
+
+	<style type="text/css">
+		table {
+		    font-family: arial, sans-serif;
+		    border-collapse: collapse;
+		    width: 100%;
+		}
+
+		td, th {
+		    border: 1px solid #dddddd;
+		    text-align: left;
+		    padding: 8px;
+		}
+
+		tr:nth-child(even) {
+		    background-color: #dddddd;
+		}
+	</style>
+
+</head>
+<body>
+	<h1> Contacts </h1>
+	<table>
+		<tr> 
+			<th>Name</th>
+			<th>Address</th>
+			<th>Contact By Phone</th>
+			<th>Contact By Mail</th>
+			<th>Contact By Email</th>
+		</tr>
+		<% for ( var i=0; i < contactArray.length; i++) { %>
+				<tr>
+					<td><%= contactArray[i].name %></td>
+					<td><%= contactArray[i].address %></td>
+					<td><%= contactArray[i].contactPhone %></td>
+					<td><%= contactArray[i].contactMail %></td>
+					<td><%= contactArray[i].contactEmail %></td>
+				</tr>
+			<% } %>
+	</table>
+
+</body>
+</html>

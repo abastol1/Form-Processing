@@ -1,0 +1,18 @@
+{
+  "name": "project1",
+  "version": "1.0.0",
+  "description": "Form Processing and Site Navigation",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Anuj Bastola",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.3",
+    "get-form-data": "^2.0.0",
+    "nodemon": "^1.18.3"
+  }
+}
